@@ -32,10 +32,10 @@ function bingeWatch(episodes){
       console.log("done")
     }
     else {
-      console.log(episodes)
+
       var nextEpisode = getNextEpisodeInPlaylist(episodes);
 
-      console.log(nextEpisode)
+      console.log("the next episode is " + nextEpisode.title)
       console.log(episodes.length)
 
       var newList = removeFromPlaylist(episodes, nextEpisode);
